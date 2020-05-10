@@ -1,7 +1,7 @@
 <?php
 
 
-namespace Umoke\PhinoCabs\Administrators\Providers;
+namespace PiloteFramework\Administrators\Providers;
 
 
 class BroadcastServiceProvider

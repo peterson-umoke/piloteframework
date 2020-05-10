@@ -6,7 +6,7 @@ namespace PiloteFramework\Administrators\Providers;
 
 use Illuminate\Support\ServiceProvider;
 
-class AppServiceProvider extends ServiceProvider
+class ProjectServiceProvider extends ServiceProvider
 {
 
 }

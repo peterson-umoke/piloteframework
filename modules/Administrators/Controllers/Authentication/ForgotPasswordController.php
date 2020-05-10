@@ -1,7 +1,7 @@
 <?php
 
 
-namespace Umoke\PhinoCabs\Administrators\Controllers\Authentication;
+namespace PiloteFramework\Administrators\Controllers\Authentication;
 
 
 use Umoke\PhinoCabs\Core\Controllers\BaseController;
