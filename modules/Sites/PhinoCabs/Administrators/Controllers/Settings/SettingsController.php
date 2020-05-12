@@ -1,7 +1,7 @@
 <?php
 
 
-namespace Umoke\PhinoCabs\Administrators\Controllers\Settings;
+namespace PiloteFramework\Sites\PhinoCabs\Administrators\Controllers\Settings;
 
 
 use Umoke\PhinoCabs\Core\Controllers\BaseController;

@@ -1,7 +1,7 @@
 <?php
 
 
-namespace Umoke\PhinoCabs\Core\Controllers;
+namespace PiloteFramework\Core\Controllers;
 
 
 use Illuminate\Foundation\Auth\Access\AuthorizesRequests;

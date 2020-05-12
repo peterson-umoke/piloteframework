@@ -1,7 +1,7 @@
 <?php
 
 
-namespace Umoke\PhinoCabs\Administrators\Providers;
+namespace PiloteFramework\Sites\PhinoCabs\Administrators\Providers;
 
 
 use Illuminate\Foundation\Support\Providers\RouteServiceProvider as ServiceProvider;
