@@ -1,7 +1,7 @@
 <?php
 
 
-namespace Umoke\PhinoCabs\Themes;
+namespace PiloteFramework\Themes;
 
 
 use Illuminate\Support\ServiceProvider;
