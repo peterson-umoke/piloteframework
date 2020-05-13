@@ -1,7 +1,7 @@
 <?php
 
 
-namespace PiloteFramework\Themes;
+namespace PiloteFramework\SiteThemes;
 
 
 use Illuminate\Support\ServiceProvider;
