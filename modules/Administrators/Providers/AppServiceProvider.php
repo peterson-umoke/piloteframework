@@ -25,9 +25,6 @@ class AppServiceProvider extends ServiceProvider
         $this->registerConfigs();
         $this->registerMigrations();
         $this->registerFactories();
-        $this->registerThemes();
-        $this->registerSites();
-
     }
 
     /**
@@ -81,14 +78,6 @@ class AppServiceProvider extends ServiceProvider
         if (!app()->environment('production') && $this->app->runningInConsole()) {
             app(Factory::class)->load(__DIR__ . "/../Database/Factories");
         }
-    }
-
-    private function registerThemes()
-    {
-    }
-
-    private function registerSites()
-    {
     }
 
     /**
