@@ -43,6 +43,11 @@ class AppServiceProvider extends ServiceProvider
 
     private function registerProviders()
     {
+        $this->app->register(ThemeServiceProvider::class);
+        $this->app->register(SiteServiceProvider::class);
+        $this->app->register(BroadcastServiceProvider::class);
+        $this->app->register(EventServiceProvider::class);
+        $this->app->register(AuthServiceProvider::class);
         $this->app->register(RouteServiceProvider::class);
     }
 
