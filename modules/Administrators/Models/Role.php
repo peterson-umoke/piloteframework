@@ -4,9 +4,9 @@
 namespace PiloteFramework\Administrators\Models;
 
 
-use Illuminate\Database\Eloquent\Model;
+use Spatie\Permission\Models\Role as Model;
 
 class Role extends Model
 {
-    protected $table = "roles";
+
 }
