@@ -26,7 +26,8 @@
         "nunomaduro/collision": "^4.1",
         "phpunit/phpunit": "^8.5",
         "laravel/telescope": "3.3.1",
-        "barryvdh/laravel-ide-helper": "2.7.0"
+        "barryvdh/laravel-ide-helper": "2.7.0",
+        "barryvdh/laravel-debugbar": "3.3.3"
     },
     "config": {
         "optimize-autoloader": true,
@@ -35,16 +36,22 @@
     },
     "extra": {
         "laravel": {
-            "dont-discover": []
+            "dont-discover": [],
+            "providers": [
+            ],
+            "aliases": {}
         }
     },
     "autoload": {
         "psr-4": {
-            "App\\": "app/"
+            "App\\": "app/",
+            "PiloteFramework\\": "modules/"
         },
         "classmap": [
             "database/seeds",
-            "database/factories"
+            "database/factories",
+            "modules/Administrators/Database/Seeders",
+            "modules/Administrators/Database/Factories"
         ]
     },
     "autoload-dev": {

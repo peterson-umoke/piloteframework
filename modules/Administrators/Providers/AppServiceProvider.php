@@ -8,6 +8,8 @@ use Illuminate\Database\Eloquent\Factory;
 use Illuminate\Routing\Router;
 use Illuminate\Support\Facades\Config;
 use Illuminate\Support\ServiceProvider;
+use PiloteFramework\Administrators\Middlewares\RedirectIfAdministrator;
+use PiloteFramework\Administrators\Middlewares\RedirectIfNotAdministrator;
 
 class AppServiceProvider extends ServiceProvider
 {
@@ -49,7 +51,7 @@ class AppServiceProvider extends ServiceProvider
         $sourcePath = __DIR__ . "/../Views";
         $this->loadViewsFrom(array_merge((array_map(function ($path) {
             return $path . "/";
-        }, Config::get("view.paths"))),[$sourcePath]),"administrators");
+        }, Config::get("view.paths"))), [$sourcePath]), "administrator");
     }
 
     private function registerConfigs()
@@ -88,9 +90,8 @@ class AppServiceProvider extends ServiceProvider
      */
     private function bootMiddlewares(Router $router)
     {
-//$router->aliasMiddleware("administrator.redirect_if_not_administrator",);
-//$router->aliasMiddleware("administrator.redirect_if_administrator",);
-//$router->aliasMiddleware("administrator.authenticate_if_administrator",);
+        $router->aliasMiddleware("administrator.auth", RedirectIfNotAdministrator::class);
+        $router->aliasMiddleware("administrator.auth.guest", RedirectIfAdministrator::class);
     }
 
     /**

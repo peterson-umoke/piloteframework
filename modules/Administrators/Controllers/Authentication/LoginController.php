@@ -4,7 +4,7 @@
 namespace PiloteFramework\Administrators\Controllers\Authentication;
 
 
-use Umoke\PhinoCabs\Core\Controllers\BaseController;
+use PiloteFramework\Core\Controllers\BaseController;
 
 class LoginController extends BaseController
 {
