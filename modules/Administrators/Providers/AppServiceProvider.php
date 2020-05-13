@@ -60,6 +60,7 @@ class AppServiceProvider extends ServiceProvider
         $this->mergeConfigFrom(__DIR__ . "/../Config/menu_config.php", "administrators.menu_configurations");
         $this->mergeConfigFrom(__DIR__ . "/../Config/site_config.php", "administrators.site_configurations");
         $this->mergeConfigFrom(__DIR__ . "/../Config/auth_config.php", "administrators.auth_configurations");
+        $this->mergeConfigFrom(__DIR__ . "/../Config/theme_config.php", "administrators.theme_configurations");
         $this->mergeConfigFrom(__DIR__ . "/../Config/guards_config.php", "auth.guards");
         $this->mergeConfigFrom(__DIR__ . "/../Config/providers_config.php", "auth.providers");
         $this->mergeConfigFrom(__DIR__ . "/../Config/passwords_config.php", "auth.passwords");
