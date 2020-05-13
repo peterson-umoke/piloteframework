@@ -58,10 +58,10 @@ class AppServiceProvider extends ServiceProvider
 
     private function registerConfigs()
     {
-        $this->mergeConfigFrom(__DIR__ . "/../Config/app_config.php", "administrators.app_configurations");
-        $this->mergeConfigFrom(__DIR__ . "/../Config/menu_config.php", "administrators.menu_configurations");
-        $this->mergeConfigFrom(__DIR__ . "/../Config/site_config.php", "administrators.site_configurations");
-        $this->mergeConfigFrom(__DIR__ . "/../Config/auth_config.php", "administrators.auth_configurations");
+        $this->mergeConfigFrom(__DIR__ . "/../Config/app_config.php", "administrator.app_configurations");
+        $this->mergeConfigFrom(__DIR__ . "/../Config/menu_config.php", "administrator.menu_configurations");
+        $this->mergeConfigFrom(__DIR__ . "/../Config/site_config.php", "administrator.site_configurations");
+        $this->mergeConfigFrom(__DIR__ . "/../Config/auth_config.php", "administrator.auth_configurations");
         $this->mergeConfigFrom(__DIR__ . "/../Config/guards_config.php", "auth.guards");
         $this->mergeConfigFrom(__DIR__ . "/../Config/providers_config.php", "auth.providers");
         $this->mergeConfigFrom(__DIR__ . "/../Config/passwords_config.php", "auth.passwords");
