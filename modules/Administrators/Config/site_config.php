@@ -1,10 +1,15 @@
 <?php
 
 return [
+    "default" => [
+        "site" => "Cryptocurrency",
+        "theme" => "piloteframework/cryptocurrency",
+    ],
     "sites" => [
         "phinocabs" => PiloteFramework\Sites\PhinoCabs\Administrators\Providers\AppServiceProvider::class,
         "mbatrades" => "",
         "cryptocurrency" => "",
     ],
-    "default_site" => "cryptocurrency",
+    "themes" => [],
+    "subdomains" => [],
 ];
