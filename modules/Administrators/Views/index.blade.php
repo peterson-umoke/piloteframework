@@ -1,3 +1,3 @@
 Administrator view works
 
-{{dd(config("administrator"))}}
+{{dd(config("administrator"),config("auth"))}}
